@@ -16,7 +16,7 @@ class CAR
     private ?int $id = null;
 
     #[ORM\Column(length: 255)]
-    private ?string $marka = null;
+    private ?string $mark = null;
 
     #[ORM\Column]
     private ?int $price = null;
@@ -26,14 +26,14 @@ class CAR
         return $this->id;
     }
 
-    public function getMarka(): ?string
+    public function getMark(): ?string
     {
-        return $this->marka;
+        return $this->mark;
     }
 
-    public function setMarka(string $marka): self
+    public function setMark(string $mark): self
     {
-        $this->marka = $marka;
+        $this->mark = $mark;
 
         return $this;
     }
